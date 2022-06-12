@@ -1,0 +1,17 @@
+{
+  "name": "meet-v1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "~4.16.1",
+    "googleapis": "^101.0.0",
+    "nodejs-base64": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
