@@ -13,14 +13,14 @@ const {google} = require('googleapis');
 const SCOPES = ['https://www.googleapis.com/auth/calendar.events'];
 
 
-app.get('/api/schedule-meet', (req, res) => {
+app.post('/api/schedule-meet', (req, res) => {
     const body = req.body;
     // Example of parameters given in body
-    body.summary = 'Summary';
-    body.description = 'Description';
-    body.location = 'Location';
-    body.date1 = '2022-06-15T00:00:00.000Z';
-    body.date2 = '2022-06-15T01:00:00.000Z';
+    // body.summary = 'Summary';
+    // body.description = 'Description';
+    // body.location = 'Location';
+    // body.date1 = '2022-06-15T00:00:00.000Z';
+    // body.date2 = '2022-06-15T01:00:00.000Z';
     const oAuth2Client = new google.auth.OAuth2(
         process.env.GOOGLE_CLIENT_ID,
         process.env.GOOGLE_CLIENT_SECRET,
